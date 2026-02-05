@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -10,15 +10,16 @@
 <body onload="displayCart()">
 
 <header class="menu-header">
-  <h1>Our Menu</h1>
+  <h1>Our Coffee Menu</h1>
   <a href="index.html"><button class="btn">Home</button></a>
 </header>
 
-<!-- ================= DRINKS ================= -->
 <section class="menu-section">
-  <h2>Coffee & Drinks</h2>
+  <h2>Hot & Iced Coffee</h2>
+
   <div class="menu-items">
 
+    <!-- Caramel Latte -->
     <div class="item">
       <img src="https://images.unsplash.com/photo-1587734195503-904fca47e0e9?auto=format&fit=crop&w=600&q=80" alt="Caramel Latte">
       <h3>Caramel Latte</h3>
@@ -27,6 +28,7 @@
       <button onclick="addToCart('Caramel Latte',150,'latte')">Add</button>
     </div>
 
+    <!-- Espresso -->
     <div class="item">
       <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&q=80" alt="Espresso">
       <h3>Classic Espresso</h3>
@@ -35,6 +37,7 @@
       <button onclick="addToCart('Classic Espresso',120,'espresso')">Add</button>
     </div>
 
+    <!-- Iced Coffee -->
     <div class="item">
       <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80" alt="Iced Coffee">
       <h3>Iced Coffee</h3>
@@ -43,14 +46,16 @@
       <button onclick="addToCart('Iced Coffee',130,'iced')">Add</button>
     </div>
 
+    <!-- Cappuccino -->
     <div class="item">
-      <img src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Coffee-PNG/Cappuccino_PNG_Picture.png?m=1629790233" alt="Cappuccino">
+      <img src="https://images.unsplash.com/photo-1523942839745-7848d7c63d86?auto=format&fit=crop&w=600&q=80" alt="Cappuccino">
       <h3>Cappuccino</h3>
       <p class="price">₱140</p>
       <input type="number" min="1" value="1" id="cappuccino">
       <button onclick="addToCart('Cappuccino',140,'cappuccino')">Add</button>
     </div>
 
+    <!-- Mocha -->
     <div class="item">
       <img src="https://images.unsplash.com/photo-1572441713132-51c75654db73?auto=format&fit=crop&w=600&q=80" alt="Mocha">
       <h3>Mocha</h3>
@@ -59,50 +64,54 @@
       <button onclick="addToCart('Mocha',160,'mocha')">Add</button>
     </div>
 
+    <!-- Americano -->
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80" alt="Americano">
+      <h3>Americano</h3>
+      <p class="price">₱125</p>
+      <input type="number" min="1" value="1" id="americano">
+      <button onclick="addToCart('Americano',125,'americano')">Add</button>
+    </div>
+
+    <!-- Vanilla Latte -->
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Vanilla Latte">
+      <h3>Vanilla Latte</h3>
+      <p class="price">₱155</p>
+      <input type="number" min="1" value="1" id="vanilla">
+      <button onclick="addToCart('Vanilla Latte',155,'vanilla')">Add</button>
+    </div>
+
+    <!-- Hazelnut Latte -->
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1494314671902-399b18174975?auto=format&fit=crop&w=600&q=80" alt="Hazelnut Latte">
+      <h3>Hazelnut Latte</h3>
+      <p class="price">₱165</p>
+      <input type="number" min="1" value="1" id="hazelnut">
+      <button onclick="addToCart('Hazelnut Latte',165,'hazelnut')">Add</button>
+    </div>
+
+    <!-- Flat White -->
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1527169402691-a7e0e8a3f90f?auto=format&fit=crop&w=600&q=80" alt="Flat White">
+      <h3>Flat White</h3>
+      <p class="price">₱145</p>
+      <input type="number" min="1" value="1" id="flatwhite">
+      <button onclick="addToCart('Flat White',145,'flatwhite')">Add</button>
+    </div>
+
+    <!-- Macchiato -->
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=80" alt="Macchiato">
+      <h3>Caramel Macchiato</h3>
+      <p class="price">₱170</p>
+      <input type="number" min="1" value="1" id="macchiato">
+      <button onclick="addToCart('Caramel Macchiato',170,'macchiato')">Add</button>
+    </div>
+
   </div>
 </section>
 
-<!-- ================= BREAD ================= -->
-<section class="menu-section">
-  <h2>Bread & Pastries</h2>
-  <div class="menu-items">
-
-    <div class="item">
-      <img src="https://images.unsplash.com/photo-1555507036-ab794f4adee5?auto=format&fit=crop&w=600&q=80" alt="Croissant">
-      <h3>Croissant</h3>
-      <p class="price">₱90</p>
-      <input type="number" min="1" value="1" id="croissant">
-      <button onclick="addToCart('Croissant',90,'croissant')">Add</button>
-    </div>
-
-    <div class="item">
-      <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=600&q=80" alt="Baguette">
-      <h3>Baguette</h3>
-      <p class="price">₱80</p>
-      <input type="number" min="1" value="1" id="baguette">
-      <button onclick="addToCart('Baguette',80,'baguette')">Add</button>
-    </div>
-
-    <div class="item">
-      <img src="https://images.unsplash.com/photo-1586449480558-6e5a6f3c5f5b?auto=format&fit=crop&w=600&q=80" alt="Whole Wheat Bread">
-      <h3>Whole Wheat Bread</h3>
-      <p class="price">₱70</p>
-      <input type="number" min="1" value="1" id="wheat">
-      <button onclick="addToCart('Whole Wheat Bread',70,'wheat')">Add</button>
-    </div>
-
-    <div class="item">
-      <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?auto=format&fit=crop&w=600&q=80" alt="Chocolate Muffin">
-      <h3>Chocolate Muffin</h3>
-      <p class="price">₱95</p>
-      <input type="number" min="1" value="1" id="muffin">
-      <button onclick="addToCart('Chocolate Muffin',95,'muffin')">Add</button>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= CART ================= -->
 <section class="cart-section">
   <h2>Your Cart</h2>
   <table>
