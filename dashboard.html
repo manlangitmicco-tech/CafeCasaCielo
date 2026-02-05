@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu - Café Casa Cielo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="displayCart()">
+
+<header class="menu-header">
+  <h1>Our Menu</h1>
+  <a href="index.html"><button class="btn">Home</button></a>
+</header>
+
+<section class="menu-section">
+  <h2>Coffee & Drinks</h2>
+  <div class="menu-items">
+
+    <!-- DRINKS -->
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1521302080371-0c8b3f6b6cde?auto=format&fit=crop&w=600&q=80">
+      <h3>Caramel Latte</h3>
+      <p class="price">₱150</p>
+      <input type="number" min="1" value="1" id="latte">
+      <button onclick="addToCart('Caramel Latte',150,'latte')">Add</button>
+    </div>
+
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=80">
+      <h3>Classic Espresso</h3>
+      <p class="price">₱120</p>
+      <input type="number" min="1" value="1" id="espresso">
+      <button onclick="addToCart('Classic Espresso',120,'espresso')">Add</button>
+    </div>
+
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=600&q=80">
+      <h3>Iced Coffee</h3>
+      <p class="price">₱130</p>
+      <input type="number" min="1" value="1" id="iced">
+      <button onclick="addToCart('Iced Coffee',130,'iced')">Add</button>
+    </div>
+
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80">
+      <h3>Cappuccino</h3>
+      <p class="price">₱140</p>
+      <input type="number" min="1" value="1" id="cappuccino">
+      <button onclick="addToCart('Cappuccino',140,'cappuccino')">Add</button>
+    </div>
+
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=600&q=80">
+      <h3>Mocha</h3>
+      <p class="price">₱160</p>
+      <input type="number" min="1" value="1" id="mocha">
+      <button onclick="addToCart('Mocha',160,'mocha')">Add</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="menu-section">
+  <h2>Bread & Pastries</h2>
+  <div class="menu-items">
+
+    <!-- BREAD -->
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1589307004396-3d6a3d6f5a44?auto=format&fit=crop&w=600&q=80">
+      <h3>Croissant</h3>
+      <p class="price">₱90</p>
+      <input type="number" min="1" value="1" id="croissant">
+      <button onclick="addToCart('Croissant',90,'croissant')">Add</button>
+    </div>
+
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=600&q=80">
+      <h3>Baguette</h3>
+      <p class="price">₱80</p>
+      <input type="number" min="1" value="1" id="baguette">
+      <button onclick="addToCart('Baguette',80,'baguette')">Add</button>
+    </div>
+
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1605478034237-38b9b13e5d29?auto=format&fit=crop&w=600&q=80">
+      <h3>Whole Wheat Bread</h3>
+      <p class="price">₱70</p>
+      <input type="number" min="1" value="1" id="wheat">
+      <button onclick="addToCart('Whole Wheat Bread',70,'wheat')">Add</button>
+    </div>
+
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1599785209798-6d0b03f7b0a5?auto=format&fit=crop&w=600&q=80">
+      <h3>Chocolate Muffin</h3>
+      <p class="price">₱95</p>
+      <input type="number" min="1" value="1" id="muffin">
+      <button onclick="addToCart('Chocolate Muffin',95,'muffin')">Add</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="cart-section">
+  <h2>Your Cart</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Qty</th>
+        <th>Price</th>
+        <th>Subtotal</th>
+      </tr>
+    </thead>
+    <tbody id="cart"></tbody>
+  </table>
+  <h3>Total: ₱<span id="total">0</span></h3>
+  <button class="btn" onclick="checkout()">Checkout</button>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>
